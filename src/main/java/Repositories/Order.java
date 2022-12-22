@@ -10,6 +10,9 @@ public class Order {
 
     private List<OrderItem> items;
 
+    public Order(List<OrderItem> items) {
+    }
+
     public void Order(List<OrderItem> items) {
         this.items = items;
     }

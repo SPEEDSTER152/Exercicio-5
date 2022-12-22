@@ -8,7 +8,7 @@ public class OrderItemTest {
 
     @Test
     public void shouldCalculateTotalPrice() {
-        final Product product = new Product(1, "Fogao", 5, 100.00, 50.00);
+        final Product product = new Product(1, "Fogao", 5, 100.00, 50.00,50.00);
 
 
         final OrderItem orderItem = new OrderItem("fogao", 5, 0.5);

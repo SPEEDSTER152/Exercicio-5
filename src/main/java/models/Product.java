@@ -9,12 +9,15 @@ public class Product {
     private Double Price;
     private Double maxDiscountPrice;
 
-    public Product(Integer productId, String nameProduct, Integer quantityInStock, Double Price, Double maxDiscountPrice) {
+    private Double priceWithDiscount;
+
+    public Product(Integer productId, String nameProduct, Integer quantityInStock, Double Price, Double maxDiscountPrice,Double PriceWithDoiscount) {
         this.ProductId = productId;
         this.nameProduct = nameProduct;
         this.quantityInStock = quantityInStock;
         this.Price = Price;
         this.maxDiscountPrice = maxDiscountPrice;
+        this.priceWithDiscount = PriceWithDoiscount;
     }
     public Double getPriceWithoutDiscount(final Double Discount) {
         Double price = null;
@@ -68,11 +71,19 @@ public class Product {
         Price = price;
     }
 
-    public Double getMaxDiscountPrice() {
+    public Double getMaxDiscountPrice(double v) {
         return maxDiscountPrice;
     }
 
     public void setMaxDiscountPrice(Double maxDiscountPrice) {
         this.maxDiscountPrice = maxDiscountPrice;
+    }
+
+    public Double getPriceWithDiscount(double v) {
+        return priceWithDiscount;
+    }
+
+    public void setPriceWithDiscount(Double priceWithDiscount) {
+        this.priceWithDiscount = priceWithDiscount;
     }
 }
